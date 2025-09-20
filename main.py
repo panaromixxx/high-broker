@@ -3,6 +3,8 @@ import time
 import threading
 from collections import defaultdict
 
+# v1
+
 API_TOKEN = ''
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -18,7 +20,7 @@ MAX_MESSAGES = 5  # макс до бана
 TIME_WINDOW = 6  # в течении скольки времени
 BAN_DURATION = 6  # время на бан
 
-def check_unbans():\
+def check_unbans():
     while True:
         try:
             current_time = time.time()
